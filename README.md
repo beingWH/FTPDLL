@@ -5,7 +5,7 @@ FTPDLL底层由socket方法实现，是一个FTPclient的基本方法类库。
 1. 命名空间中,using FTPTools.dll
 1. 调用方法
 ```C#
-例如，上传文件
+例如，下载文件
   IFTPClient client = FTPFactory.CreateClient("192.9.220.241", "vincent", "198959");
   client.Connect();
   client.OpenDownload("README.md", @"E:\README.md");
